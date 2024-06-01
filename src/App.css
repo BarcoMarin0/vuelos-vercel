@@ -1,38 +1,88 @@
+/* Establecer el degradado lineal como fondo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1a237e, #64b5f6); 
+}
+
+/* Estilos para el contenedor principal */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; 
 }
 
-.App-link {
-  color: #61dafb;
+/* Estilos para el contenedor del buscador */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para el campo de entrada del buscador */
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 300px; /* Ancho del campo de entrada */
+}
+
+/* Estilos para las listas desplegables */
+.search-container select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin-left: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* Estilos para el botón de guardar */
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1a237e;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Cambio de color de fondo del botón al pasar el ratón */
+.search-container button:hover {
+  background-color: #3949ab;
+}
+
+/* Estilos para el título */
+.titulo {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+/* Estilos para el contenedor de información */
+.info-container {
+  margin-top: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Ancho del contenedor */
+}
+
+/* Estilos para los elementos de la lista */
+.info-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-container li {
+  margin: 5px 0;
 }
